@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
-import Header from './header';
+import React from 'react';
+
+import Routes from './routes';
+
+import './global.css';
 
 function App() {
-  const [contador, contar] = useState(0);
-
-  function Incrementar() {
-    contar(contador + 1);
-  }
-
   return (
     <div>
-      <Header name="SemanaOmniStack" />
-      <b>Contador:</b>{contador}
-      <p></p>
-      <button onClick={Incrementar}>Incrementar</button>
+      <Routes />
     </div>
   );
 }
